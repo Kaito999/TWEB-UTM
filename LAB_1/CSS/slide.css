@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(8, 39, 75);
+}
+
+#suzume {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Nav bar style */
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  min-width: 1280px;
+  height: 66px;
+  background-color: rgba(17, 17, 17, 0.75);
+  box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
+}
+
+/*Slide buttons section */
+
+.slide_buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 150px;
+}
+
+.slide_buttons button {
+  border: 2px solid white;
+  border-radius: 100%;
+  background-color: #004ea2;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/*Coming soon box on main page*/
+
+.soon-header {
+  padding-top: 100px;
+  margin: 5px 60px 5px;
+}
+
+.soon_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 72px;
+  font-family: "Roboto Condesed", sans-serif;
+  font-style: italic;
+  font-size: 150%;
+  letter-spacing: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.soon-anime_group {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 542px;
+  padding-bottom: 47px;
+}
+
+.soon-header .soon-anime_group div {
+  width: 33%;
+  margin: 0 0.5% 0 0;
+}
+
+.soon-header .soon-anime_group div a {
+  display: block;
+  position: relative;
+}
+
+a {
+  outline: none;
+  outline: none;
+  color: #0c0a06;
+  text-decoration: none;
+  backface-visibility: hidden;
+}
+
+.soon-header .soon-anime_group div a img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+}
+
+img {
+  border: 0;
+  vertical-align: top;
+}
