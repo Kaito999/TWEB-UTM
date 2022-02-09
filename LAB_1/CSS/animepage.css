@@ -48,7 +48,7 @@ div {
   box-sizing: border-box;
 }
 
-.story__image {
+.story__image img {
   width: 510px;
   height: 607px;
   object-fit: cover;
