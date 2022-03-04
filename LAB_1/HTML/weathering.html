@@ -12,14 +12,21 @@
     />
   </head>
   <body>
-    <div class="header">
-      <div class="header__logo">
-        <a href="index.html">
-          <img src="../Images/totoroFilmsLogo.png" alt="totoroLogo" />
-        </a>
-      </div>
-    </div>
-    <section id="story" class="story anim-item -active">
+    <body>
+      <header class="navbar" id="navbar">
+        <img class="logo" src="../Images/totoroFilmsLogo.png" alt="Totoro Films" />
+        <nav class="navbar-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <a class="login-button" href="#"><button>Login</button></a>
+      </header>
+
+      <section id="story" class="story anim-item -active">
       <div class="story__inner">
         <div class="story__image">
           <img src="../Images/weatheringStory.jpg" alt="Suzume no Tojimari" />
@@ -50,6 +57,6 @@
           </p>
         </div>
       </div>
-    </section>
+      </section>
   </body>
 </html>
