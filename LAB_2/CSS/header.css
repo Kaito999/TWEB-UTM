@@ -16,15 +16,15 @@ button {
   align-items: center;
   padding: 0 100px;
   width: 100%;
-  height: 60px;
+  height: 5rem;
   z-index: 999;
   position: fixed;
 
-  transition: all 300ms ease-in-out;
+  transition: all 300ms ease;
 }
 
 .navbar--fixed {
-  background-color: #321ba3;
+  background-color: #333333;
 }
 
 .logo {
