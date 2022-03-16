@@ -5,48 +5,57 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: #181d23;
+  background-color: #272727;
   box-sizing: border-box;
 }
 
 .container {
+  margin-top: 150px;
   color: white;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .movie-details {
-  padding-top: 100px;
-  width: 100%;
-  margin: 0 20% 0 20%;
-}
-
-.movie-image {
-  width: 280px;
-}
-
-.text {
-  width: 60%;
-}
-
-#title {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 900px;
+}
+
+.movie-image img {
+  height: 350px;
+  border-radius: 20px;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
   font-family: "Fredoka One", cursive;
-  font-size: 1.2em;
-  margin-top: 1.2em;
+  font-size: 1.5em;
 }
 
-.banner {
-  height: 400px;
-  width: 300px;
+.movie-text {
+  margin-left: 3rem;
+  font-size: 1em;
 }
 
-.banner img {
-  height: 400px;
-  width: 300px;
-  aspect-ratio: 19/6;
-  border-radius: 30px;
+.trailer-button {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3em;
+}
+
+.trailer-video {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }

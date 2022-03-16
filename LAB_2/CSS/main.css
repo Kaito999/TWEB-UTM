@@ -40,19 +40,8 @@ img {
   max-width: 100%;
 }
 
-.gif-scroll {
-  display: flex;
-  justify-content: center;
-  z-index: 2;
-}
-
-.gif-scroll img {
-  width: 50px;
-}
-
 .wrapper {
   display: grid;
-  grid-gap: 20px;
 }
 
 .background {
@@ -80,7 +69,19 @@ img {
   position: relative;
   margin-top: 80px;
   display: grid;
-  height: 535px;
+  height: calc(100vh - 110px);
+}
+
+.gif-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.gif-scroll img {
+  width: 50px;
+  height: 50px;
 }
 
 /*Coming soon box on main page*/
