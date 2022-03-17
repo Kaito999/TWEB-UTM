@@ -41,6 +41,7 @@ button {
 }
 
 button {
+  display: inline-block;
   padding: 9px 25px;
   background-color: white;
   color: black;
