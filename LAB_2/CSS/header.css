@@ -1,17 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 li,
 a,
 button {
   font-family: "Monserat", sans-serif;
   font-size: 14px;
-  font-weight: 530;
+  font-weight: 600;
   letter-spacing: 2px;
   color: white;
 }
 
-.navbar {
+#header {
   display: block;
+  padding: 15px 0;
+  z-index: 999;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: all 300ms ease;
 }
 
 .nav-container {
@@ -19,30 +33,34 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
-  top: 0;
   width: 100%;
-  height: 5rem;
-  z-index: 999;
-  position: fixed;
-
-  transition: all 300ms ease;
 }
 
-.nav-container--fixed {
+.navbar--fixed {
   background-color: #333333;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 10px 0 10px 30px;
 }
 
 .logo {
   cursor: pointer;
-}
-
-.navbar-menu ul {
-  list-style-type: none;
-}
-
-.navbar-menu li {
-  display: inline-block;
-  padding: 0 20px;
 }
 
 button {
@@ -55,17 +73,17 @@ button {
   cursor: pointer;
 }
 
-.navbar-menu a {
+.navbar a {
   position: relative;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-.navbar-menu a:hover {
+.navbar a:hover {
   color: rgb(255, 255, 255);
 }
 
-.navbar-menu a::before {
+.navbar a::before {
   content: "";
   position: absolute;
   display: block;
@@ -78,6 +96,6 @@ button {
   transition: transform 0.3s ease;
 }
 
-.navbar-menu a:hover::before {
+.navbar a:hover::before {
   transform: scaleX(1);
 }

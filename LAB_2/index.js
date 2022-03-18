@@ -10,7 +10,7 @@ const backgroundBlur = () => {
 
 document.addEventListener("scroll", backgroundBlur);
 
-const navbar = document.getElementById("nav-container");
+const navbar = document.getElementById("header");
 
 const navbarFixed = () => {
   if (window.scrollY > 0) {
