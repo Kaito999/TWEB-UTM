@@ -14,9 +14,9 @@ const navbar = document.getElementById("nav-container");
 
 const navbarFixed = () => {
   if (window.scrollY > 0) {
-    navbar.classList.add("nav-container--fixed");
+    navbar.classList.add("navbar--fixed");
   } else {
-    navbar.classList.remove("nav-container--fixed");
+    navbar.classList.remove("navbar--fixed");
   }
 };
 
