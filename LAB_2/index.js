@@ -10,13 +10,13 @@ const backgroundBlur = () => {
 
 document.addEventListener("scroll", backgroundBlur);
 
-const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("nav-container");
 
 const navbarFixed = () => {
   if (window.scrollY > 0) {
-    navbar.classList.add("navbar--fixed");
+    navbar.classList.add("nav-container--fixed");
   } else {
-    navbar.classList.remove("navbar--fixed");
+    navbar.classList.remove("nav-container--fixed");
   }
 };
 
