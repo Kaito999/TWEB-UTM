@@ -47,7 +47,7 @@ body {
   margin-top: 180px;
   display: flex;
   width: 900px;
-  height: 350px;
+  height: 80vh;
 }
 
 .movie-image img {
@@ -58,7 +58,7 @@ body {
 .title-text {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 350px;
 }
 
 .title {
@@ -102,6 +102,5 @@ body {
 }
 
 .trailer-video {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  padding: 150px 0;
 }
