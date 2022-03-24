@@ -22,7 +22,7 @@ const navbarFixed = () => {
 
 document.addEventListener("scroll", navbarFixed);
 
-//slider
+//slider ================================================================================
 
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
