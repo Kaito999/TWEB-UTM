@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #272727;
+  box-sizing: border-box;
+}
+
+.news-header {
+  padding: 7vh 0;
+}
+
+.news-header h1 {
+  font-family: "Monserat", sans-serif;
+  color: white;
+  font-size: 1.7em;
+}
+
+.news-container {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news-box {
+  width: 80%;
+}
+
+.collapsible {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+}
+
+.collapsible dl {
+  display: flex;
+}
+
+.collapsible dl dt span {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  margin: 0 25px;
+  width: 110px;
+}
+
+.active,
+.collapsible:hover {
+  border: 1px solid white;
+}
+
+.active {
+  border-radius: 25px 25px 0 0;
+  margin: 0;
+}
+
+.content {
+  color: black;
+  overflow: hidden;
+  display: none;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 0 0 25px 25px;
+  background-color: white;
+}
