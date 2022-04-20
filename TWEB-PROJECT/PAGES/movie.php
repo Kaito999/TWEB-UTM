@@ -4,30 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jujutsu Kaisen</title>
     <link rel="stylesheet" href="../CSS/movie.css" />
     <link rel="stylesheet" href="../CSS/header.css" />
   </head>
   <body>
     <!-- Navigation menu-->
-    <header class="fixed-top" id="header">
-      <div class="nav-container">
-        <img
-          class="logo"
-          src="../Images/totoroFilmsLogo.png"
-          alt="Totoro Films"
-        />
-        <nav class="navbar" id="navbar">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Genres</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
-        <a class="login-button" href="#"><button>Login</button></a>
-      </div>
-    </header>
+    <?php require('../Templates/navbar.php'); ?>
 
     <div class="container">
       <section class="movie-details">
@@ -74,6 +57,6 @@
       </div>
     </div>
 
-    <script src="../index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

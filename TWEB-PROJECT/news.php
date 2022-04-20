@@ -5,29 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
-    <link rel="stylesheet" href="../CSS/header.css" />
-    <link rel="stylesheet" href="../CSS/news.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/news.css" />
   </head>
   <body>
     <!-- Navigation menu-->
-    <header class="fixed-top" id="header">
-      <div class="nav-container">
-        <img
-          class="logo"
-          src="../Images/totoroFilmsLogo.png"
-          alt="Totoro Films"
-        />
-        <nav class="navbar" id="navbar">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Genres</a></li>
-            <li><a href="../index.html#footer">About</a></li>
-          </ul>
-        </nav>
-        <a class="login-button" href="#"><button>Login</button></a>
-      </div>
-    </header>
+    <?php require('Templates/navbar.php') ?>
 
     <section class="news">
       <article class="news-container">
@@ -163,6 +146,6 @@
         </div>
       </article>
     </section>
-    <script src="../index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

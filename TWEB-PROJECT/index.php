@@ -15,28 +15,8 @@
   <body>
     <div id="background" class="background"></div>
 
-    <!-- Navigation menu-->
-    <header class="fixed-top" id="header">
-      <div class="nav-container">
-        <img class="logo" src="Images/totoroFilmsLogo.png" alt="Totoro Films" />
-        <nav class="navbar" id="navbar">
-          <ul>
-            <li>
-              <a class="nav-link scrolling active" href="#wrapper">Home</a>
-            </li>
-            <li>
-              <a class="nav-link scrolling" href="HTML/news.html">News</a>
-            </li>
-            <li><a class="nav-link scrolling" href="#genres">Genres</a></li>
-            <li>
-              <a class="nav-link scrolling" href="#footer">About</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="login-button" href="#"><button>Login</button></a>
-      </div>
-    </header>
-    <div class="wrapper" id="wrapper">
+    <?php require('Templates/navbar.php') ?>
+    
       <!-- Top container for new anime titles -->
       <section class="top-container">
         <a href="#slider">
@@ -51,7 +31,7 @@
       <section class="soon-container" id="slider">
         <div class="items">
           <div class="item active">
-            <a href="HTML/movie.html">
+            <a href="PAGES/movie.php">
               <img
                 src="Images/JujutsuKaisenMini.jpeg"
                 alt="Jujutsu Kaisen Zero"
@@ -59,25 +39,25 @@
             </a>
           </div>
           <div class="item next">
-            <a href="HTML/5cmpersecond.html">
+            <a href="PAGES/demonslayer.php">
               <img
-                src="Images/5cmpersecondMini.jpg"
+                src="Images/demonslayer.jpg"
                 alt="5 Centimeteres per Seconds"
               />
             </a>
           </div>
           <div class="item">
-            <a href="HTML/weathering.html">
+            <a href="PAGES/weathering.html">
               <img src="Images/weatheringMini.jpg" alt="Weathering with you" />
             </a>
           </div>
           <div class="item">
-            <a href="HTML/suzume.html"
+            <a href="PAGES/suzume.html"
               ><img src="Images/suzumeMini.jpg" alt="Suzume no Tojimari"
             /></a>
           </div>
           <div class="item prev">
-            <a href="HTML/weathering.html">
+            <a href="PAGES/weathering.html">
               <img src="Images/weatheringMini.jpg" alt="Weathering with you" />
             </a>
           </div>
