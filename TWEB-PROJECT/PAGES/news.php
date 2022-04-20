@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/news.css" />
+  </head>
+  <body>
+    <!-- Navigation menu-->
+    <?php require('navbar.php') ?>
+
+    <section class="news">
+      <article class="news-container">
+        <section class="news-header">
+          <h1>News</h1>
+        </section>
+
+        <div class="topic-box"></div>
+        <div class="news-box">
+          <button type="button" class="collapsible">
+            <time datetime="2022-03-25">2022-03-25</time>
+            <dl>
+              <dt>
+                <span>Release</span>
+              </dt>
+              <dd>Atack on Titan last season release date!</dd>
+            </dl>
+          </button>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, quidem dolore. Possimus nobis nulla reprehenderit
+              consequatur error, maxime, harum at assumenda temporibus nemo sed,
+              repellat maiores nostrum quas iste sint?
+            </p>
+          </div>
+
+          <button type="button" class="collapsible">
+            <time datetime="2022-03-25">2022-03-25</time>
+            <dl>
+              <dt>
+                <span>Topic</span>
+              </dt>
+              <dd>Atack on Titan last season release date!</dd>
+            </dl>
+          </button>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              iusto est voluptate voluptatem optio sapiente harum iure placeat,
+              dicta molestiae, eveniet nihil blanditiis minima et cumque vero
+              eum odit in.
+            </p>
+          </div>
+
+          <button type="button" class="collapsible">
+            <time datetime="2022-03-25">2022-03-25</time>
+            <dl>
+              <dt>
+                <span>Topic</span>
+              </dt>
+              <dd>Atack on Titan last season release date!</dd>
+            </dl>
+          </button>
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio exercitationem cumque necessitatibus labore ipsum
+              laudantium, voluptatum ea maxime fugiat neque quae nobis, vitae
+              natus quis obcaecati unde ullam. Facere, ex?
+            </p>
+          </div>
+
+          <button type="button" class="collapsible">
+            <time datetime="2022-03-25">2022-03-25</time>
+            <dl>
+              <dt>
+                <span>Events</span>
+              </dt>
+              <dd>Atack on Titan last season release date!</dd>
+            </dl>
+          </button>
+          <div class="content">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+              repellat similique dicta nihil voluptatum id praesentium rerum
+              non. Eveniet harum quos velit ad necessitatibus laborum sit,
+              quaerat earum possimus distinctio.
+            </p>
+          </div>
+
+          <button type="button" class="collapsible">
+            <time datetime="2022-03-25">2022-03-25</time>
+            <dl>
+              <dt>
+                <span>Release</span>
+              </dt>
+              <dd>Atack on Titan last season release date!</dd>
+            </dl>
+          </button>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat,
+              ad fugit iure asperiores voluptas dolor laudantium, veniam
+              architecto corrupti culpa modi similique excepturi ducimus
+              incidunt quisquam distinctio repudiandae! Tempora.
+            </p>
+          </div>
+          <button type="button" class="collapsible">
+            <time datetime="2022-03-25">2022-03-25</time>
+            <dl>
+              <dt>
+                <span>Events</span>
+              </dt>
+              <dd>Atack on Titan last season release date!</dd>
+            </dl>
+          </button>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat,
+              ad fugit iure asperiores voluptas dolor laudantium, veniam
+              architecto corrupti culpa modi similique excepturi ducimus
+              incidunt quisquam distinctio repudiandae! Tempora.
+            </p>
+          </div>
+          <button type="button" class="collapsible">
+            <time datetime="2022-03-25">2022-03-25</time>
+            <dl>
+              <dt>
+                <span>Events</span>
+              </dt>
+              <dd>Atack on Titan last season release date!</dd>
+            </dl>
+          </button>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat,
+              ad fugit iure asperiores voluptas dolor laudantium, veniam
+              architecto corrupti culpa modi similique excepturi ducimus
+              incidunt quisquam distinctio repudiandae! Tempora.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script src="../index.js"></script>
+  </body>
+</html>

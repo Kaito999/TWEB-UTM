@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+body {
+  background: url(../Images/back8k-c.png) fixed;
+  background-size: cover;
+}
+
+#title-Tag-Line {
+  font-size: 20px;
+}
+
+.form {
+  margin-top: 150px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+::-webkit-input-placeholder {
+  font-size: 1.3em;
+}
+
+.title {
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+.termsConditions {
+  margin: 0 auto 5px 80px;
+}
+
+.pageTitle {
+  padding-top: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.name {
+  display: block;
+  margin-top: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.email {
+  display: block;
+  margin-top: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  height: 2em;
+}
+
+.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+}

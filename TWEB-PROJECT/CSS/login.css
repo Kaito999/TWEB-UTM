@@ -304,3 +304,16 @@ body {
 
   transform: translateX(30%);
 }
+
+.error-message {
+  display: flex;
+  justify-content: center;
+
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+  padding-bottom: 20px;
+}

@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demon Slayer</title>
-    <link rel="stylesheet" href="CSS/movie.css" />
-    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="../css/movie.css" />
+    <link rel="stylesheet" href="../css/header.css" />
   </head>
   <body>
     <!-- Navigation menu-->
-    <?php require('Templates/navbar.php'); ?>
+    <?php require('navbar.php'); ?>
 
     <div class="container">
       <section class="movie-details">
         <div class="movie-image">
-          <img src="Images/demonslayer.jpg" alt="" />
+          <img src="../images/demonslayer.jpg" alt="" />
         </div>
         <div class="title-text">
           <div class="title">
@@ -41,7 +41,7 @@
         <iframe
           width="900"
           height="500"
-          src="https://www.youtube.com/embed/2docezZl574"
+          src="https://www.youtube.com/embed/VQGCKyvzIM4"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -50,6 +50,6 @@
       </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>
