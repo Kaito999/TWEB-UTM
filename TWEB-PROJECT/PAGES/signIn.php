@@ -1,5 +1,5 @@
 <?php session_start();
-$_SESSION['errors'] = true;
+$_SESSION['signin-errors'] = true;
 
 if (count($_POST))
 {
@@ -11,12 +11,11 @@ if (count($_POST))
 
     foreach ($accessData as $value) {
         if ($value->email == $inputEmail && $value->password == $mpassword) {
-            $_SESSION['errors'] = false;
+            $_SESSION['signin-errors'] = false;
             header("Location:index.php");
         } else {
             header("Location:login.php");
         }
     }
 
-}
 ?>

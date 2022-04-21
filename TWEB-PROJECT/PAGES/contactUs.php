@@ -16,11 +16,11 @@
   <body>
     <?php require('navbar.php') ?>
     <div class="wrapper">
-      <form class="form">
+      <form action="contactSubmit.php" method="post" class="form">
         <div class="pageTitle title">Contact Us</div>
-        <input type="text" class="name formEntry" placeholder="Name" />
-        <input type="text" class="email formEntry" placeholder="Email" />
-        <textarea class="message formEntry" placeholder="Message"></textarea>
+        <input name="contact-name" type="text" class="name formEntry" placeholder="Name" type="name" required/>
+        <input name="contact-email" type="text" class="email formEntry" placeholder="Email" type="email" required/>
+        <textarea name="contact-message" class="message formEntry" placeholder="Message" type="message" required></textarea>
         <button class="submit formEntry" onclick="thanks()">Submit</button>
       </form>
     </div>

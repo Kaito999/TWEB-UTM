@@ -25,9 +25,9 @@
         
         <div class="error-message">
           <?php session_start(); 
-            if (isset($_SESSION['errors']) && $_SESSION['errors']){
+            if (isset($_SESSION['signin-errors']) && $_SESSION['signin-errors']){
               echo " <div style='background-color: red'> Wrong email or password. </div> ";
-              $_SESSION['errors'] = false;
+              $_SESSION['signin-errors'] = false;
             } 
           ?>
         </div>
