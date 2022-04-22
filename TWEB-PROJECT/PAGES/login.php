@@ -21,7 +21,7 @@
         Sign in
         <span class="underline"></span>
       </button>
-      <form action="signIn.php" method="post" class="form form-login">
+      <form action="signIn.php" method="post" class="form form-login" novalidate>
         
         <div class="error-message">
           <?php session_start(); 
@@ -36,11 +36,12 @@
             <legend>Please, enter your email and password for login.</legend>
            <div class="input-block">
               <label for="login-email">E-mail</label>
-              <input name="input-email" id="login-email" placeholder="Email" type="email" required>
+              <input name="input-email" id="login-email" placeholder="Email" type="email" required minlength="8">
+              <span class="error" aria-live="polite"></span>
             </div>
             <div class="input-block">
               <label for="login-password">Password</label>
-              <input name="input-password" id="login-password" placeholder="Password" type="password" required>
+              <input name="input-password" id="login-password" placeholder="Password" type="password" required minlength="8">
             </div>
           </fieldset>
           <button type="submit" class="btn-login">Sign in</button>
@@ -54,7 +55,16 @@
         <span class="underline"></span>
       </button>
       <form action="signUP.php" method="post" class="form form-signup">
-          
+        
+        <p style='color: red'>
+          <?php 
+            if(isset($_SESSION['query_result']) && $_SESSION['signup-errors'] == true){
+              echo $_SESSION['query_result'];
+              unset($_SESSION['query_result']);
+            }
+          ?>
+        </p>
+
         <fieldset>
           <legend>Please, enter your email, password and password confirmation for sign up.</legend>
           <div class="input-block">

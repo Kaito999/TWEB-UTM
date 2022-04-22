@@ -17,5 +17,5 @@ if (count($_POST))
             header("Location:login.php");
         }
     }
-
+}
 ?>
