@@ -95,28 +95,37 @@ switchers.forEach((item) => {
   });
 });
 
-// sign-in email validation ===================================================================
+// email validation ===================================================================
 
 const emailInput = document.getElementById("login-email");
+const emailRegister = document.getElementById("signup-email");
+
+let emailRegex = /^\S+@\S+\.\S+$/;
 
 emailInput.addEventListener("input", () => {
-  if (emailInput.value.match(/^\S+@\S+\.\S+$/)) {
+  if (emailInput.value.match(emailRegex)) {
     emailInput.style.backgroundColor = "green";
   } else {
     emailInput.style.backgroundColor = "red";
   }
 });
 
-// function evmailInput(){
-//   if(emailInput == ''{
+emailRegister.addEventListener("input", () => {
+  if (emailRegister.value.match(emailRegex)) {
+    emailRegister.style.backgroundColor = "green";
+  } else {
+    emailRegister.style.backgroundColor = "red";
+  }
+});
 
-//   }
-// }
+// password validation =================================================================
 
-// //sign-in password validation =================================================================
+const passwordInput = document.getElementById("login-password");
 
-// const passwordInput = document.getElementById("login-password");
-
-// passwordInput.addEventListener("input", () =>  {
-
-// });
+passwordInput.addEventListener("input", () => {
+  if (passwordInput.value.match(/^[A-Za-z]\w{7,14}$/)) {
+    passwordInput.style.backgroundColor = "green";
+  } else {
+    passwordInput.style.backgroundColor = "red";
+  }
+});

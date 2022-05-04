@@ -37,11 +37,12 @@
            <div class="input-block">
               <label for="login-email">E-mail</label>
               <input name="input-email" id="login-email" placeholder="Email" type="email" required>
-              <span id="email-error" style="color:red"> Invalid email. </span>
             </div>
             <div class="input-block">
               <label for="login-password">Password</label>
               <input name="input-password" id="login-password" placeholder="Password" type="password" required minlength="8">
+              <span class="requirements">Password must be between 7 to 16 charachters and contain only characters, 
+                numeric digits, underscore and first character must be a letter</span>
             </div>
           </fieldset>
           <button type="submit" class="btn-login">Sign in</button>
