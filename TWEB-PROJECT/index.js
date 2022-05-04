@@ -94,3 +94,29 @@ switchers.forEach((item) => {
     this.parentElement.classList.add("is-active");
   });
 });
+
+// sign-in email validation ===================================================================
+
+const emailInput = document.getElementById("login-email");
+
+emailInput.addEventListener("input", () => {
+  if (emailInput.value.match(/^\S+@\S+\.\S+$/)) {
+    emailInput.style.backgroundColor = "green";
+  } else {
+    emailInput.style.backgroundColor = "red";
+  }
+});
+
+// function evmailInput(){
+//   if(emailInput == ''{
+
+//   }
+// }
+
+// //sign-in password validation =================================================================
+
+// const passwordInput = document.getElementById("login-password");
+
+// passwordInput.addEventListener("input", () =>  {
+
+// });

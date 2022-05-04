@@ -21,7 +21,7 @@
         Sign in
         <span class="underline"></span>
       </button>
-      <form action="signIn.php" method="post" class="form form-login" novalidate>
+      <form action="signIn.php" method="post" class="form form-login">
         
         <div class="error-message">
           <?php session_start(); 
@@ -36,8 +36,8 @@
             <legend>Please, enter your email and password for login.</legend>
            <div class="input-block">
               <label for="login-email">E-mail</label>
-              <input name="input-email" id="login-email" placeholder="Email" type="email" required minlength="8">
-              <span class="error" aria-live="polite"></span>
+              <input name="input-email" id="login-email" placeholder="Email" type="email" required>
+              <span id="email-error" style="color:red"> Invalid email. </span>
             </div>
             <div class="input-block">
               <label for="login-password">Password</label>
