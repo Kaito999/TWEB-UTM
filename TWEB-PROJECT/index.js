@@ -122,10 +122,34 @@ emailRegister.addEventListener("input", () => {
 
 const passwordInput = document.getElementById("login-password");
 
+let passwordRegex = /^[A-Za-z]\w{7,14}$/;
+
 passwordInput.addEventListener("input", () => {
-  if (passwordInput.value.match(/^[A-Za-z]\w{7,14}$/)) {
+  if (passwordInput.value.match(passwordRegex)) {
     passwordInput.style.backgroundColor = "green";
   } else {
     passwordInput.style.backgroundColor = "red";
+  }
+});
+
+const passwordSignUp1 = document.getElementById("signup-password");
+const passwordSignUp2 = document.getElementById("signup-password-confirm");
+
+passwordSignUp1.addEventListener("input", () => {
+  if (passwordSignUp1.value.match(passwordRegex)) {
+    passwordSignUp1.style.backgroundColor = "green";
+  } else {
+    passwordSignUp1.style.backgroundColor = "red";
+  }
+});
+
+passwordSignUp2.addEventListener("input", () => {
+  if (
+    passwordSignUp2.value.match(passwordRegex) &&
+    passwordSignUp1.value == passwordSignUp2.value
+  ) {
+    passwordSignUp2.style.backgroundColor = "green";
+  } else {
+    passwordSignUp2.style.backgroundColor = "red";
   }
 });

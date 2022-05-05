@@ -18,6 +18,16 @@
             </li>
           </ul>
         </nav>
+
+        <?php  
+        if(isset($_SESSION['log-key']) && $_SESSION['log-key']){
+        ?>
         <a id="main-login" href="login.php"><button>Login</button></a>
+        <?php }else{?>
+        <a id="main-logout" href="clearSession.php" ><button>logout</button></a>
+        <?php }?>
+
       </div>
 </header>
+<script src="../session.js"></script>
+
