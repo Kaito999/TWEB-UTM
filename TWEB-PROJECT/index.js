@@ -102,19 +102,19 @@ const emailRegister = document.getElementById("signup-email");
 
 let emailRegex = /^\S+@\S+\.\S+$/;
 
-emailInput.addEventListener("input", () => {
-  if (emailInput.value.match(emailRegex)) {
-    emailInput.style.backgroundColor = "green";
-  } else {
-    emailInput.style.backgroundColor = "red";
-  }
-});
-
 emailRegister.addEventListener("input", () => {
   if (emailRegister.value.match(emailRegex)) {
     emailRegister.style.backgroundColor = "green";
   } else {
     emailRegister.style.backgroundColor = "red";
+  }
+});
+
+emailInput.addEventListener("input", () => {
+  if (emailInput.value.match(emailRegex)) {
+    emailInput.style.backgroundColor = "green";
+  } else {
+    emailInput.style.backgroundColor = "red";
   }
 });
 

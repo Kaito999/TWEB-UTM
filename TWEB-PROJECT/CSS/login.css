@@ -269,7 +269,6 @@ body {
   min-width: 120px;
   margin: 30px auto 10px;
   font-size: 18px;
-  line-height: 40px;
   border-radius: 10px;
   border: none;
   transition: all 0.3s ease-out;
@@ -297,7 +296,6 @@ body {
   width: 100%;
   background-color: #ffffff;
   color: #080710;
-  padding: 15px 0;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
