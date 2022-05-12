@@ -24,7 +24,7 @@
     </form>
   </div>
 
-  <script src="../validation.js"></script>
+  <script src="../contactValidation.js"></script>
 </body>
 
 </html>
