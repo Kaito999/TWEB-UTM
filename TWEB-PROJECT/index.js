@@ -166,7 +166,6 @@ $("body").on("submit", ".form-login", function (e) {
 });
 
 function login() {
-  alert(flagValidation);
   if (flagValidation) {
     $.ajax({
       url: "http://totorofilms.com/pages/signIn.php",
@@ -175,10 +174,7 @@ function login() {
         "input-email": emailInput.value,
         "input-password": passwordInput.value,
       },
-      dataType: "html",
-      cache: false,
       success: function (data) {
-        alert("yay");
         if (data == "OK") {
           buttonLogin.enabled = false;
           window.location.href = "http://totorofilms.com/pages/index.php";
@@ -188,6 +184,6 @@ function login() {
       },
     });
   } else {
-    alert("Incorect data");
+    alert("Incorrect data");
   }
 }
