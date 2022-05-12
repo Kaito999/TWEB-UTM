@@ -123,10 +123,12 @@ emailInput.addEventListener("input", () => {
 const passwordInput = document.getElementById("login-password");
 
 let passwordRegex = /^[A-Za-z]\w{7,14}$/;
+let flagValidation = false;
 
 passwordInput.addEventListener("input", () => {
   if (passwordInput.value.match(passwordRegex)) {
     passwordInput.style.backgroundColor = "green";
+    flagValidation = true;
   } else {
     passwordInput.style.backgroundColor = "red";
   }
@@ -153,3 +155,53 @@ passwordSignUp2.addEventListener("input", () => {
     passwordSignUp2.style.backgroundColor = "red";
   }
 });
+
+// ajax part =====================================================================
+
+let buttonLogin = document.getElementById("validation-button");
+// $("submit").click(function (e) {
+//   e.preventDefault();
+//   login();
+// });
+
+$("body").on("submit", ".form", function (e) {
+  e.preventDefault();
+  login();
+});
+
+function login() {
+  alert(flagValidation);
+  if (flagValidation) {
+    $.ajax({
+      url: "http://totorofilms.com/pages/signIn.php",
+      type: "POST",
+      data: {
+        "input-email": emailInput.value,
+        "input-password": passwordInput.value,
+      },
+      dataType: "html",
+      cache: false,
+      beforeSend: function () {
+        console.log("Loading...");
+      },
+      succes: function (data) {
+        if (data == "OK") {
+          buttonLogin.enabled = false;
+          window.location.href = "http://totorofilms.com/pages/index.php";
+        } else {
+          alert("error login");
+        }
+      },
+    });
+  } else {
+    alert("Incorect data");
+  }
+}
+
+// $(".form-login").validate({
+//   if(flagValidation){
+//     submitHandler: function(form-login){
+
+//     }
+//   }
+// })

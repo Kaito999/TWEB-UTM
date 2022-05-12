@@ -10,10 +10,13 @@
   <link rel="stylesheet" href="../css/login.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 
 <body>
   <?php require('navbar.php') ?>
+
+  <div id="block-window"></div>
 
   <section class="forms-section">
     <div class="forms">
@@ -23,6 +26,7 @@
           Sign in
           <span class="underline"></span>
         </button>
+
         <form action="signIn.php" method="post" class="form form-login">
 
           <div class="error-message">
@@ -45,7 +49,7 @@
               <input name="input-password" id="login-password" placeholder="Password" type="password" required minlength="7">
             </div>
           </fieldset>
-          <button type="submit" class="btn-login">Sign in</button>
+          <button id="validation-button" type="submit" class="btn-login">Sign in</button>
         </form>
 
       </div>

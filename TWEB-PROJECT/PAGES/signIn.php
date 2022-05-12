@@ -22,9 +22,12 @@ if (count($_POST)) {
             $_SESSION['signin-errors'] = false;
             $_SESSION['log-key'] = true;
 
-            header("Location:index.php");
-        } else {
-            header("Location:login.php");
+            $data = "OK";
+            echo $data;
+        }else{
+            echo "user error";
         }
+    }else{
+        echo "sign in error";
     }
 }
