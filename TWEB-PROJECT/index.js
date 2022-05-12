@@ -159,12 +159,8 @@ passwordSignUp2.addEventListener("input", () => {
 // ajax part =====================================================================
 
 let buttonLogin = document.getElementById("validation-button");
-// $("submit").click(function (e) {
-//   e.preventDefault();
-//   login();
-// });
 
-$("body").on("submit", ".form", function (e) {
+$("body").on("submit", ".form-login", function (e) {
   e.preventDefault();
   login();
 });
@@ -181,10 +177,8 @@ function login() {
       },
       dataType: "html",
       cache: false,
-      beforeSend: function () {
-        console.log("Loading...");
-      },
-      succes: function (data) {
+      success: function (data) {
+        alert("yay");
         if (data == "OK") {
           buttonLogin.enabled = false;
           window.location.href = "http://totorofilms.com/pages/index.php";
@@ -197,11 +191,3 @@ function login() {
     alert("Incorect data");
   }
 }
-
-// $(".form-login").validate({
-//   if(flagValidation){
-//     submitHandler: function(form-login){
-
-//     }
-//   }
-// })
