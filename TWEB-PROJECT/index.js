@@ -179,11 +179,11 @@ function login() {
           buttonLogin.enabled = false;
           window.location.href = "http://totorofilms.com/pages/index.php";
         } else {
-          alert("error login");
+          console.log("Data error...");
         }
       },
     });
   } else {
-    alert("Incorrect data");
+    console.log("Incorrect data");
   }
 }
